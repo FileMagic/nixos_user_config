@@ -4,6 +4,7 @@
                 ripgrep
                 wget
                 cargo
+                rustc
                 nodejs
                 jq 
         ];
