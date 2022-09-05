@@ -15,6 +15,7 @@
                 userEmail = "file_magic";
                 extraConfig = {
                         init.defaultBranch = "main";
+                        pull.rebase = true;
                 };
         };
 
