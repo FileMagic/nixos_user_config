@@ -1,19 +1,26 @@
 { pkgs, ...}: {
         # Packages
         home.packages = with pkgs; [
+                # Tools I like to use
                 ripgrep
                 wget
+                jq 
+                
+                # For neovim
+                nodejs
+
+                # Rust Stuff
                 cargo
                 rustc
-                nodejs
-                jq 
+                gcc
+                openssl.dev
         ];
 
         # Git
         programs.git = {
                 enable = true;
-                userName  =  "FileMagic@protonmail.com";
-                userEmail = "file_magic";
+                userName  =  "file_magic";
+                userEmail = "FileMagic@protonmail.com";
                 extraConfig = {
                         init.defaultBranch = "main";
                         pull.rebase = true;
